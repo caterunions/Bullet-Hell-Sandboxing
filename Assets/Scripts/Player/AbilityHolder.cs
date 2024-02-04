@@ -12,7 +12,14 @@ public class AbilityHolder : MonoBehaviour
     [SerializeField]
     private PlayerStats _stats;
 
+    [SerializeField]
+    private PlayerInventory _playerInventory;
+
+    [SerializeField]
+    private GameObject _player;
+
     private bool _usingAbility = false;
+    public bool UsingAbility => _usingAbility;
 
     private float _curAbilityCooldown = 0;
 
@@ -25,6 +32,21 @@ public class AbilityHolder : MonoBehaviour
         
         _usingAbility = true;
         _stats.DepleteMana(_curAbility.ManaCost);
+
+        foreach(AbilityEffect effect in _curAbility.AbilityStartEffects)
+        {
+            effect.ProvideContext(_player, _playerInventory, _stats, _launcher);
+            effect.Activate();
+        }
+        
+        if(_curAbility.CanBeHeldDown)
+        {
+            foreach (AbilitySustainEffect effect in _curAbility.AbilitySustainEffects)
+            {
+                effect.ProvideContext(_player, _playerInventory, _stats, _launcher);
+                effect.Activate();
+            }
+        }
     }
 
     public void StopAbility()
@@ -34,6 +56,19 @@ public class AbilityHolder : MonoBehaviour
 
         _usingAbility = false;
         _curAbilityCooldown = _curAbility.Cooldown;
+
+        if(_curAbility.CanBeHeldDown)
+        {
+            foreach (AbilitySustainEffect effect in _curAbility.AbilitySustainEffects)
+            {
+                effect.Cancel();
+            }
+            foreach (AbilityEffect effect in _curAbility.AbilityEndEffects)
+            {
+                effect.ProvideContext(_player, _playerInventory, _stats, _launcher);
+                effect.Activate();
+            }
+        }
     }
 
     public void ChangeAbility(Ability ability)
@@ -48,6 +83,11 @@ public class AbilityHolder : MonoBehaviour
         {
             _curAbilityCooldown -= Time.deltaTime;
             if( _curAbilityCooldown < 0) _curAbilityCooldown = 0;
+        }
+        if(_usingAbility && _curAbility.CanBeHeldDown)
+        {
+            if (_curAbility.ManaDrain * Time.deltaTime > _stats.CurrentMana) StopAbility();
+            else _stats.DepleteMana(_curAbility.ManaDrain * Time.deltaTime);
         }
     }
 }

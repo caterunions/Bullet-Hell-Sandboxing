@@ -38,10 +38,35 @@ public class BulletLauncher : MonoBehaviour
 
             float critChance = 0;
             float critPower = 1;
-            if(stats as PlayerStats != null)
+
+            PlayerStats pstats = stats as PlayerStats;
+            if(pstats != null)
             {
-                critChance = (stats as PlayerStats).CritChance;
-                critPower = (stats as PlayerStats).CritPower;
+                if(pattern.DamageType == DamageType.Neutral)
+                {
+                    critChance = pstats.CritChance;
+                    critPower = pstats.CritPower;
+                }
+                else if (pattern.DamageType == DamageType.Melee)
+                {
+                    critChance = pstats.MeleeCritChance;
+                    critPower = pstats.MeleeCritPower;
+                }
+                else if (pattern.DamageType == DamageType.Ranged)
+                {
+                    critChance = pstats.RangedCritChance;
+                    critPower = pstats.RangedCritPower;
+                }
+                else if (pattern.DamageType == DamageType.Magic)
+                {
+                    critChance = pstats.MagicCritChance;
+                    critPower = pstats.MagicCritPower;
+                }
+                else if (pattern.DamageType == DamageType.Summoning)
+                {
+                    critChance = pstats.SummonCritChance;
+                    critPower = pstats.SummonCritPower;
+                }
             }
 
             b.OnHit += TriggerSpawnedHitEvent;

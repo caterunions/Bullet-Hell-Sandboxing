@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701a2a4fabf26154d907fe5824fc94fe, type: 3}
+  m_Name: Test Held Ability
+  m_EditorClassIdentifier: 
+  _internalID: test_held_ability
+  _displayName: Test Held Ability
+  _description: 
+  _sprite: {fileID: 1308129117, guid: 455574a72824b5c45b76a174753d41ab, type: 3}
+  _starReq: 0
+  _rarity: 0
+  _statBoosts: []
+  _itemEffects: []
+  _manaCost: 20
+  _cooldown: 5
+  _canBeHeldDown: 1
+  _manaDrain: 10
+  _abilityStartEffects:
+  - {fileID: 11400000, guid: f983076d7deadb443b581d2850910ee9, type: 2}
+  _abilitySustainEffects:
+  - {fileID: 11400000, guid: cdbc5eaf2e60d78498b911a3757b2454, type: 2}
+  _abilityEndEffects:
+  - {fileID: 11400000, guid: 41a5604243e6c304899a7fd2623804e9, type: 2}

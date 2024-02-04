@@ -27,8 +27,8 @@ public class Ability : EquippableItem
     public List<AbilityEffect> AbilityStartEffects => _abilityStartEffects;
 
     [SerializeField]
-    private List<AbilityEffect> _abilitySustainEffects = new List<AbilityEffect>();
-    public List<AbilityEffect> AbilitySustainEffects => _abilitySustainEffects;
+    private List<AbilitySustainEffect> _abilitySustainEffects = new List<AbilitySustainEffect>();
+    public List<AbilitySustainEffect> AbilitySustainEffects => _abilitySustainEffects;
 
     [SerializeField]
     private List<AbilityEffect> _abilityEndEffects = new List<AbilityEffect>();

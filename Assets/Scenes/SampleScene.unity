@@ -9674,12 +9674,12 @@ MonoBehaviour:
   _maxHealth: 100
   _regen: 1
   _armor: 0
+  _abilityHolder: {fileID: 1614708572}
   _maxMana: 200
   _manaRegen: 5
   _maxManaRegenMultiplier: 5
   _timeToMaxManaRegen: 10
   _critChance: 10
-  _critPower: 1
   _playerInventory: {fileID: 11400000, guid: 95c69db9d2314944ca38ddfd349c3bc0, type: 2}
 --- !u!114 &1614708566
 MonoBehaviour:
@@ -9751,6 +9751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _launcher: {fileID: 1780066011}
   _stats: {fileID: 1614708565}
+  _playerInventory: {fileID: 11400000, guid: 95c69db9d2314944ca38ddfd349c3bc0, type: 2}
+  _player: {fileID: 1614708554}
 --- !u!1001 &1645720278
 PrefabInstance:
   m_ObjectHideFlags: 0

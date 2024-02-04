@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class PlayerStats : EntityStats
 {
+    [SerializeField]
+    private AbilityHolder _abilityHolder;
+
     public event Action<PlayerStats, int> OnAmmoChange;
     public event Action<PlayerStats, int> OnMaxAmmoChange;
     public event Action<PlayerStats, Sprite> OnAmmoIconChange;
@@ -69,7 +72,11 @@ public class PlayerStats : EntityStats
     private float _manaRegen;
     public float ManaRegen
     {
-        get { return ApplyStatBoosts(_manaRegen, StatTypes.ManaRegen); }
+        get 
+        {
+            if (_abilityHolder.UsingAbility) return 0f;
+            return ApplyStatBoosts(_manaRegen, StatTypes.ManaRegen); 
+        }
     }
 
     [SerializeField]
@@ -93,11 +100,58 @@ public class PlayerStats : EntityStats
         get { return ApplyStatBoosts(_critChance, StatTypes.CritChance); }
     }
 
-    [SerializeField]
     private float _critPower = 1;
     public float CritPower
     {
         get { return ApplyStatBoosts(_critPower, StatTypes.CritPower); }
+    }
+
+    private float _meleeCritChance;
+    public float MeleeCritChance
+    {
+        get { return ApplyStatBoosts(_meleeCritChance, StatTypes.MeleeCritChance) + CritChance; }
+    }
+
+    private float _meleeCritPower = 1;
+    public float MeleeCritPower
+    {
+        get { return ApplyStatBoosts(_meleeCritPower, StatTypes.MeleeCritPower) + (CritPower - 1); }
+    }
+
+    private float _rangedCritChance;
+    public float RangedCritChance
+    {
+        get { return ApplyStatBoosts(_rangedCritChance, StatTypes.RangedCritChance) + CritChance; }
+    }
+
+    private float _rangedCritPower = 1;
+    public float RangedCritPower
+    {
+        get { return ApplyStatBoosts(_rangedCritPower, StatTypes.RangedCritPower) + (CritPower - 1); }
+    }
+
+    private float _magicCritChance;
+    public float MagicCritChance
+    {
+        get { return ApplyStatBoosts(_magicCritChance, StatTypes.MagicCritChance) + CritChance; }
+    }
+
+    private float _magicCritPower = 1;
+    public float MagicCritPower
+    {
+        get { return ApplyStatBoosts(_magicCritPower, StatTypes.MagicCritPower) + (CritPower - 1); }
+    }
+
+    private float _summonCritChance;
+    public float SummonCritChance
+    {
+        get { return ApplyStatBoosts(_summonCritChance, StatTypes.SummonCritChance) + CritChance; }
+    }
+
+    private float _summonCritPower = 1;
+    public float SummonCritPower
+    {
+        get { return ApplyStatBoosts(_summonCritPower, StatTypes.SummonCritPower) + (CritPower - 1); }
     }
 
     [SerializeField]
@@ -191,7 +245,15 @@ public enum StatTypes
     MaxManaRegenMult,
     TimeToMaxManaRegen,
     CritChance,
-    CritPower
+    CritPower,
+    MeleeCritChance,
+    MeleeCritPower,
+    RangedCritChance,
+    RangedCritPower,
+    MagicCritChance,
+    MagicCritPower,
+    SummonCritChance,
+    SummonCritPower
 }
 
 public enum StatBoostType
