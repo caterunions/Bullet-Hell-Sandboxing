@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7879365138050502191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7879365138050502190}
+  - component: {fileID: 7879365138050502176}
+  - component: {fileID: 7879365138050502177}
+  - component: {fileID: 7879365138050502179}
+  m_Layer: 5
+  m_Name: StarDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7879365138050502190
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879365138050502191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -45}
+  m_SizeDelta: {x: 100, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7879365138050502176
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879365138050502191}
+  m_CullTransparentMesh: 1
+--- !u!114 &7879365138050502177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879365138050502191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7879365138050502179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7879365138050502191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3d2e87bdd476a45a044edce80b7610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _starDisplay: {fileID: 7879365138050502177}
+  _zeroStars: {fileID: -1162923029, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  _commonStars:
+  - {fileID: -1776828426, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 704276178, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 454206356, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 1892342044, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -457035526, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  _uncommonStars:
+  - {fileID: -307512512, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 836199999, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -808388815, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -1996805127, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -91288498, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  _rareStars:
+  - {fileID: -966605860, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -755717324, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -1251642157, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -1418771787, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 1551519267, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  _epicStars:
+  - {fileID: -902241313, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 1800588876, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 1944468998, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -1473584176, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 51181283, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  _legendaryStars:
+  - {fileID: -2018110506, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 342862197, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: 1111883066, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -889395373, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}
+  - {fileID: -1687055571, guid: 4a85fcabe17684740846be2ebe4a5660, type: 3}

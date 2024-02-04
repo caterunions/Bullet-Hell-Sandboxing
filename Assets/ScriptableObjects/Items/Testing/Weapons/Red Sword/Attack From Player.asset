@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bb6fe432355a4a4aa623bbb98658fa5, type: 3}
+  m_Name: Attack From Player
+  m_EditorClassIdentifier: 
+  _attack:
+    _bullet: {fileID: -3271346685934605788, guid: 7d73501a0b1efe548a091b518f8a1258, type: 3}
+    _count: 5
+    _countModifier: 0
+    _spread: 40
+    _spreadModifier: 0
+    _angleOffsetIncrease: 0
+    _repetitions: 1
+    _repeatDelay: 0
+    _endDelay: 0
+    _startAtFixedAngle: 0
+    _fixedAngle: 0
+    _randomAngleOffset: 0
+  _damageType: 0

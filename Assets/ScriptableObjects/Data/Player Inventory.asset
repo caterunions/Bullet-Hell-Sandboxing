@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad1bfe5cb0937d4ba75f401a5c77d0a, type: 3}
+  m_Name: Player Inventory
+  m_EditorClassIdentifier: 
+  _miscInventory:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 8119f0cddff691c4ead0796d6a730bf3, type: 2}
+  - {fileID: 11400000, guid: 6c8a6ac5981a2a746997c23392c0f14d, type: 2}
+  - {fileID: 11400000, guid: 712672d0c0a43f14a970c048b5377647, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 26a7eed6ae65f684a9e03c88fb687689, type: 2}
+  - {fileID: 11400000, guid: 8fe226e4cfdf4c248979b5de0196d3c9, type: 2}
+  - {fileID: 0}
+  _weapon: {fileID: 11400000, guid: 01382800d1f127f4f94828cc98ba4b45, type: 2}
+  _ability: {fileID: 11400000, guid: 470b2ad3d3b43b94cb50ceaf10be5cc7, type: 2}
+  _accessories:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: d47f95527b5abd64589dd06c245cd2c3, type: 2}
+  _helmet: {fileID: 0}
+  _chestArmor: {fileID: 11400000, guid: 82bc8619293c9f244aeb4ef03504bba2, type: 2}
+  _legsArmor: {fileID: 0}

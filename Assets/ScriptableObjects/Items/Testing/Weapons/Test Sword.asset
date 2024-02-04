@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5db7c57d64393f418e1b79a742d8bfd, type: 3}
+  m_Name: Test Sword
+  m_EditorClassIdentifier: 
+  _internalID: test_sword
+  _displayName: Test Sword
+  _description: Ouchie!
+  _sprite: {fileID: 852684560, guid: 455574a72824b5c45b76a174753d41ab, type: 3}
+  _starReq: 2
+  _rarity: 4
+  _statBoosts: []
+  _attacks:
+  - _bullet: {fileID: -3271346685934605788, guid: 7d73501a0b1efe548a091b518f8a1258, type: 3}
+    _count: 1
+    _countModifier: 0
+    _spread: 0
+    _spreadModifier: 0
+    _angleOffsetIncrease: 0
+    _repetitions: 1
+    _repeatDelay: 0.2
+    _endDelay: 0
+    _startAtFixedAngle: 0
+    _fixedAngle: 0
+    _randomAngleOffset: 0

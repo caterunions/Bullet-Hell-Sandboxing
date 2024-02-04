@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b27f9ac3a60304da3e10c3789e874c, type: 3}
+  m_Name: Test Staff
+  m_EditorClassIdentifier: 
+  _internalID: test_staff
+  _displayName: Test Staff
+  _description: Magic!
+  _sprite: {fileID: -1368866105, guid: 455574a72824b5c45b76a174753d41ab, type: 3}
+  _starReq: 4
+  _rarity: 3
+  _statBoosts: []
+  _manaCost: 5
+  _attacks:
+  - _bullet: {fileID: 5591581710160893541, guid: ceae1189cd832b94a97bdfae993cc71a, type: 3}
+    _count: 1
+    _countModifier: 0
+    _spread: 0
+    _spreadModifier: 0
+    _angleOffsetIncrease: 0
+    _repetitions: 1
+    _repeatDelay: 0
+    _endDelay: 0.3
+    _startAtFixedAngle: 0
+    _fixedAngle: 0
+    _randomAngleOffset: 0
