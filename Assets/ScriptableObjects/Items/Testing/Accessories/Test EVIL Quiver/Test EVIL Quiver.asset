@@ -26,7 +26,11 @@ MonoBehaviour:
 
 
     Ranged attacks have a chance of
-    firing an additional boomeranging bone'
+    firing an additional boomeranging bone
+
+
+    Ranged crits spawn a burst of bones
+    at the target'
   _sprite: {fileID: 534978574, guid: 455574a72824b5c45b76a174753d41ab, type: 3}
   _starReq: 2
   _rarity: 1
@@ -45,3 +49,8 @@ MonoBehaviour:
     _chance: 5
     _activations:
     - {fileID: 11400000, guid: 780ffdb3f7644e545817c8c26578abb2, type: 2}
+  - _uniqueIdentifier: test_evil_quiver/attack_from_target
+    _trigger: 10
+    _chance: 100
+    _activations:
+    - {fileID: 11400000, guid: 78beac9a88d904043bc428a83f5bb7a4, type: 2}

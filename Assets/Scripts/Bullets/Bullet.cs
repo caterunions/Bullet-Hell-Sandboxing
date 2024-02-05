@@ -51,6 +51,9 @@ public class Bullet : MonoBehaviour
     private float _damage = 0;
     public float Damage => _damage;
 
+    private float _damageMultiplier;
+    public float DamageMultiplier => _damageMultiplier;
+
     private float _critChance = 0;
     public float CritChance => _critChance;
 
@@ -72,6 +75,9 @@ public class Bullet : MonoBehaviour
     private float _velocityMultiplier = 1f;
     public float VelocityMultiplier => _velocityMultiplier;
 
+    private BulletLauncher _launcher;
+    public BulletLauncher Launcher => _launcher;
+
     private Vector2 _origin;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -88,6 +94,7 @@ public class Bullet : MonoBehaviour
             if (dr.Team != Team)
             {
                 float damage = Damage;
+                damage *= UnityEngine.Random.Range(0.8f, 1.2f);
                 bool crit = false;
 
                 if(UnityEngine.Random.Range(0, 100) <= CritChance)
@@ -126,18 +133,20 @@ public class Bullet : MonoBehaviour
         _origin = transform.position;
     }
 
-    public virtual void Initialize(GameObject spawner, DamageTeam team, DamageType type, float damageMultiplier, float velocityMultiplier, float rangeMultiplier, float critChance, float critPower, bool cameFromEffect, List<ItemEffect> previousEffectsInChain)
+    public virtual void Initialize(GameObject spawner, BulletLauncher launcher, DamageTeam team, DamageType type, float damageMultiplier, float velocityMultiplier, float rangeMultiplier, float critChance, float critPower, bool cameFromEffect, List<ItemEffect> previousEffectsInChain)
     {
         _spawner = spawner;
         _team = team;
         _damageType = type;
-        _damage = _baseDamage * damageMultiplier * UnityEngine.Random.Range(0.8f, 1.2f);
+        _damage = _baseDamage * damageMultiplier;
+        _damageMultiplier = damageMultiplier;
         _velocityMultiplier = velocityMultiplier;
         _range *= rangeMultiplier;
         _critChance = critChance;
         _critPower = critPower;
         _cameFromEffect = cameFromEffect;
         _previousEffectsInChain = previousEffectsInChain;
+        _launcher = launcher;
 
         _collider.enabled = true;
         Behaviours.ForEach(b => b.enabled = true);

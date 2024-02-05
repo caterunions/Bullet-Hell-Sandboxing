@@ -15,13 +15,13 @@ public class BulletBundle : Bullet
         }
     }
 
-    public override void Initialize(GameObject spawner, DamageTeam team, DamageType type, float damageMultiplier, float velocityMultiplier, float rangeMultiplier, float critChance, float critPower, bool cameFromEffect, List<ItemEffect> previousEffectsInChain)
+    public override void Initialize(GameObject spawner, BulletLauncher launcher, DamageTeam team, DamageType type, float damageMultiplier, float velocityMultiplier, float rangeMultiplier, float critChance, float critPower, bool cameFromEffect, List<ItemEffect> previousEffectsInChain)
     {
         foreach(Bullet b in _bullets)
         {
             b.gameObject.SetActive(true);
 
-            b.Initialize(spawner, team, type, damageMultiplier, velocityMultiplier, rangeMultiplier, critChance, critPower, cameFromEffect, previousEffectsInChain);
+            b.Initialize(spawner, launcher, team, type, damageMultiplier, velocityMultiplier, rangeMultiplier, critChance, critPower, cameFromEffect, previousEffectsInChain);
 
             b.transform.parent = null;
         }

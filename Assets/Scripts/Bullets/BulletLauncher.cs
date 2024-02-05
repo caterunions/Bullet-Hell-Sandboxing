@@ -70,7 +70,7 @@ public class BulletLauncher : MonoBehaviour
             }
 
             b.OnHit += TriggerSpawnedHitEvent;
-            b.Initialize(transform.root.gameObject, pattern.Team, pattern.DamageType, damageMultiplier, stats.VelocityMultiplier, stats.RangeMultiplier, critChance, critPower, pattern.CameFromEffect, pattern.PreviousEffectsInChain);
+            b.Initialize(transform.root.gameObject, this, pattern.Team, pattern.DamageType, damageMultiplier, stats.VelocityMultiplier, stats.RangeMultiplier, critChance, critPower, pattern.CameFromEffect, pattern.PreviousEffectsInChain);
             OnLaunch?.Invoke(this, b);
         }
     }

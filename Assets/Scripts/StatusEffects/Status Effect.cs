@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatusEffectManager : MonoBehaviour
+public abstract class StatusEffect : ScriptableObject
 {
     
 }

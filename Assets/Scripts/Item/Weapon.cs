@@ -40,6 +40,10 @@ public class Attack
     public float SpreadModifier => _spreadModifier;
 
     [SerializeField]
+    private float _angleOffsetStart;
+    public float AngleOffsetStart => _angleOffsetStart;
+
+    [SerializeField]
     private float _angleOffsetIncrease;
     public float AngleOffsetIncrease => _angleOffsetIncrease;
 

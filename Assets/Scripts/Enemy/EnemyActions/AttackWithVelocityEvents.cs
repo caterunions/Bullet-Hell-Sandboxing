@@ -47,7 +47,7 @@ public class AttackWithVelocityEvents : EnemyAction
 
     private void LaunchAttack(Attack attack)
     {
-        _launcher.Launch(new PatternData(attack.Bullet, attack.Count, attack.Spread, Random.Range(-attack.RandomAngleOffset, attack.RandomAngleOffset), DamageTeam.Enemy, DamageType.Neutral, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), Stats.DamageMultiplier);
+        _launcher.Launch(new PatternData(attack.Bullet, attack.Count, attack.Spread, Random.Range(attack.RandomAngleOffset * -1, attack.RandomAngleOffset), DamageTeam.Enemy, DamageType.Neutral, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), Stats.DamageMultiplier);
     }
 
     private void HandleVelocityStart(EnemyBrain brain, Vector3 lastVelocity, Rigidbody2D rb)

@@ -3800,6 +3800,7 @@ MonoBehaviour:
     _countModifier: 0
     _spread: 50
     _spreadModifier: 0
+    _angleOffsetStart: 0
     _angleOffsetIncrease: 0
     _repetitions: 4
     _repeatDelay: 1
@@ -3828,6 +3829,7 @@ MonoBehaviour:
     _countModifier: 0
     _spread: 50
     _spreadModifier: 0
+    _angleOffsetStart: 0
     _angleOffsetIncrease: 0
     _repetitions: 5
     _repeatDelay: 1
@@ -4248,6 +4250,7 @@ MonoBehaviour:
     _countModifier: 0
     _spread: 0
     _spreadModifier: 0
+    _angleOffsetStart: 0
     _angleOffsetIncrease: 0
     _repetitions: 1
     _repeatDelay: 0
@@ -4261,6 +4264,7 @@ MonoBehaviour:
     _countModifier: 0
     _spread: 180
     _spreadModifier: 0
+    _angleOffsetStart: 0
     _angleOffsetIncrease: 0
     _repetitions: 1
     _repeatDelay: 0
@@ -4275,6 +4279,7 @@ MonoBehaviour:
     _countModifier: 0
     _spread: 360
     _spreadModifier: 0
+    _angleOffsetStart: 0
     _angleOffsetIncrease: 0
     _repetitions: 1
     _repeatDelay: 0
@@ -6134,6 +6139,7 @@ MonoBehaviour:
     _countModifier: 0
     _spread: 360
     _spreadModifier: 0
+    _angleOffsetStart: 0
     _angleOffsetIncrease: -3
     _repetitions: 100
     _repeatDelay: 0.1
@@ -6397,6 +6403,7 @@ MonoBehaviour:
     _countModifier: 0
     _spread: 360
     _spreadModifier: 0
+    _angleOffsetStart: 0
     _angleOffsetIncrease: 3
     _repetitions: 100
     _repeatDelay: 0.1

@@ -22,7 +22,7 @@ public class AttackFromPlayerActivation : ItemEffectActivation
     {
         int curCount = _attack.Count;
         float curSpread = _attack.Spread;
-        float curAngleOffset = 0f;
+        float curAngleOffset = _attack.AngleOffsetStart;
 
         for (int i = 0; i < _attack.Repetitions; i++)
         {

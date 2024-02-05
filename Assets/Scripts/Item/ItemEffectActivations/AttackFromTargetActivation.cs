@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Attack From Player", menuName = "Item/Ability Effects/Attack From Player")]
-public class AttackFromPlayerAbility : AbilityEffect
+[CreateAssetMenu(fileName = "Attack From Target", menuName = "Item/Effect Activations/Attack From Target")]
+public class AttackFromTargetActivation : ItemEffectActivation
 {
     [SerializeField]
     private Attack _attack;
@@ -20,7 +20,7 @@ public class AttackFromPlayerAbility : AbilityEffect
     {
         int curCount = _attack.Count;
         float curSpread = _attack.Spread;
-        float curAngleOffset = _attack.AngleOffsetStart;
+        float curAngleOffset = 0f;
 
         for (int i = 0; i < _attack.Repetitions; i++)
         {
@@ -31,7 +31,7 @@ public class AttackFromPlayerAbility : AbilityEffect
             else if (_damageType == DamageType.Magic) damageMultiplier = _playerStats.MagicDamageMultipler;
             else if (_damageType == DamageType.Summoning) damageMultiplier = _playerStats.SummoningDamageMultiplier;
 
-            _bulletLauncher.Launch(new PatternData(_attack.Bullet, curCount, curSpread, curAngleOffset + Random.Range(-_attack.RandomAngleOffset, _attack.RandomAngleOffset), DamageTeam.Player, _damageType, true, new List<ItemEffect>(), null, _attack.StartAtFixedAngle ? _attack.FixedAngle : null), damageMultiplier);
+            _bulletLauncher.Launch(new PatternData(_attack.Bullet, curCount, curSpread, curAngleOffset + Random.Range(-_attack.RandomAngleOffset, _attack.RandomAngleOffset), DamageTeam.Player, _damageType, true, _previousEffectsInChain, _target.transform.position, _attack.StartAtFixedAngle ? _attack.FixedAngle : null), damageMultiplier);
 
             curCount += _attack.CountModifier;
             curSpread += _attack.SpreadModifier;

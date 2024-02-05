@@ -17,11 +17,11 @@ public class EnemyAttack : EnemyAction
         {
             int curCount = attack.Count;
             float curSpread = attack.Spread;
-            float curAngleOffset = 0f;
+            float curAngleOffset = attack.AngleOffsetStart;
 
             for(int i = 0; i < attack.Repetitions; i++)
             {
-                _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset + Random.Range(-attack.RandomAngleOffset, attack.RandomAngleOffset), DamageTeam.Enemy, DamageType.Neutral, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), Stats.DamageMultiplier);
+                _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset + Random.Range(attack.RandomAngleOffset * -1, attack.RandomAngleOffset), DamageTeam.Enemy, DamageType.Neutral, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), Stats.DamageMultiplier);
 
                 curCount += attack.CountModifier;
                 curSpread += attack.SpreadModifier;
