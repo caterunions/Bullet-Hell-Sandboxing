@@ -29,6 +29,8 @@ public class BulletLauncher : MonoBehaviour
         {
             float currentBulletAngle = angleStep * i;
 
+            aimAngle += UnityEngine.Random.Range(pattern.RandomAngleOffset * -1, pattern.RandomAngleOffset);
+
             Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, aimAngle + currentBulletAngle - centeringOffset));
 
             Vector3 position = transform.position;
@@ -83,12 +85,13 @@ public class BulletLauncher : MonoBehaviour
 
 public class PatternData
 {
-    public PatternData(Bullet bullet, int count, float spread, float angleOffset, DamageTeam team, DamageType type, bool cameFromEffect, List<ItemEffect> previousEffectsInChain, Vector3? position, float? fixedAngle)
+    public PatternData(Bullet bullet, int count, float spread, float angleOffset, float randomAngleOffset, DamageTeam team, DamageType type, bool cameFromEffect, List<ItemEffect> previousEffectsInChain, Vector3? position, float? fixedAngle)
     {
         _bullet = bullet;
         _count = count;
         _spread = spread;
         _angleOffset = angleOffset;
+        _randomAngleOffset = randomAngleOffset;
         _team = team;
         _damageType = type;
         _position = position;
@@ -108,6 +111,9 @@ public class PatternData
 
     private float _angleOffset;
     public float AngleOffset => _angleOffset;
+
+    private float _randomAngleOffset;
+    public float RandomAngleOffset => _randomAngleOffset;
 
     private DamageTeam _team;
     public DamageTeam Team => _team;

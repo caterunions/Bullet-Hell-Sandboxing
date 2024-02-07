@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d2f62fe200ab54196df3f3b56439ea, type: 3}
+  m_Name: Rotwood Bow
+  m_EditorClassIdentifier: 
+  _internalID: rotwood_bow
+  _displayName: Rotwood Bow
+  _description: 
+  _sprite: {fileID: -1446045505, guid: c004ec9555ec50a4b909d05e0542cfda, type: 3}
+  _starReq: 1
+  _rarity: 0
+  _statBoosts: []
+  _itemEffects: []
+  _ammo: 8
+  _ammoImage: {fileID: -750732335, guid: c004ec9555ec50a4b909d05e0542cfda, type: 3}
+  _reloadTime: 1
+  _attacks:
+  - _bullet: {fileID: 4577983254873025437, guid: b96b7a34ee35063418fd12f255212b6a, type: 3}
+    _count: 2
+    _countModifier: 0
+    _spread: 20
+    _spreadModifier: 0
+    _angleOffsetStart: 0
+    _angleOffsetIncrease: 0
+    _repetitions: 1
+    _repeatDelay: 0
+    _endDelay: 0.3
+    _startAtFixedAngle: 0
+    _fixedAngle: 0
+    _randomAngleOffset: 5
+  - _bullet: {fileID: 2161539598315925361, guid: 46ab2727d661eec42bebf53f3d1d6f29, type: 3}
+    _count: 3
+    _countModifier: 0
+    _spread: 30
+    _spreadModifier: 0
+    _angleOffsetStart: 0
+    _angleOffsetIncrease: 0
+    _repetitions: 1
+    _repeatDelay: 0
+    _endDelay: 0.3
+    _startAtFixedAngle: 0
+    _fixedAngle: 0
+    _randomAngleOffset: 5

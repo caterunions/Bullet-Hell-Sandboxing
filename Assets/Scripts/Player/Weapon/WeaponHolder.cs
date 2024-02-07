@@ -70,7 +70,7 @@ public class WeaponHolder : MonoBehaviour
                     float curAngleOffset = attack.AngleOffsetStart;
                     for (int i = 0; i < attack.Repetitions; i++)
                     {
-                        _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset + UnityEngine.Random.Range(attack.RandomAngleOffset * -1, attack.RandomAngleOffset), DamageTeam.Player, weapon.DamageType, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), stats.MeleeDamageMultipler);
+                        _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset, attack.RandomAngleOffset, DamageTeam.Player, weapon.DamageType, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), stats.MeleeDamageMultipler);
 
                         curCount += attack.CountModifier;
                         curSpread += attack.SpreadModifier;
@@ -106,7 +106,7 @@ public class WeaponHolder : MonoBehaviour
                         } 
                         else
                         {
-                            _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset + UnityEngine.Random.Range(attack.RandomAngleOffset * -1, attack.RandomAngleOffset), DamageTeam.Player, weapon.DamageType, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), stats.RangedDamageMultiplier);
+                            _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset, attack.RandomAngleOffset, DamageTeam.Player, weapon.DamageType, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), stats.RangedDamageMultiplier);
 
                             curCount += attack.CountModifier;
                             curSpread += attack.SpreadModifier;
@@ -145,7 +145,7 @@ public class WeaponHolder : MonoBehaviour
                         }
                         else
                         {
-                            _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset + UnityEngine.Random.Range(attack.RandomAngleOffset * -1, attack.RandomAngleOffset), DamageTeam.Player, weapon.DamageType, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), stats.MagicDamageMultipler);
+                            _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset, attack.RandomAngleOffset, DamageTeam.Player, weapon.DamageType, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), stats.MagicDamageMultipler);
 
                             curCount += attack.CountModifier;
                             curSpread += attack.SpreadModifier;

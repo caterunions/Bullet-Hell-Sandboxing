@@ -259,7 +259,7 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,6 +267,48 @@ TextureImporter:
       bones: []
       spriteID: beb912fed0e43444180135b01f35db3f
       internalID: 1506260302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotten Kingdom Bullets_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40f1520712bc974bac31b4ea6de4326
+      internalID: -676737666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotten Kingdom Bullets_9
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d502ac95f9e7f7b4c9b7483ef5629c43
+      internalID: -1262504683
       vertices: []
       indices: 
       edges: []
@@ -284,6 +326,8 @@ TextureImporter:
     nameFileIdTable:
       Rotten Kingdom Bullets_5: -482114861
       Rotten Kingdom Bullets_7: 1506260302
+      Rotten Kingdom Bullets_8: -676737666
+      Rotten Kingdom Bullets_9: -1262504683
       Rotten Kingdom Bullets_4: -2011174927
       Rotten Kingdom Bullets_6: 1402956097
       Rotten Kingdom Bullets_3: 987978648

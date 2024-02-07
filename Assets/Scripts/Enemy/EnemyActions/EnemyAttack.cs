@@ -21,7 +21,7 @@ public class EnemyAttack : EnemyAction
 
             for(int i = 0; i < attack.Repetitions; i++)
             {
-                _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset + Random.Range(attack.RandomAngleOffset * -1, attack.RandomAngleOffset), DamageTeam.Enemy, DamageType.Neutral, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), Stats.DamageMultiplier);
+                _launcher.Launch(new PatternData(attack.Bullet, curCount, curSpread, curAngleOffset, attack.RandomAngleOffset, DamageTeam.Enemy, DamageType.Neutral, false, new List<ItemEffect>(), null, attack.StartAtFixedAngle ? attack.FixedAngle : null), Stats.DamageMultiplier);
 
                 curCount += attack.CountModifier;
                 curSpread += attack.SpreadModifier;
