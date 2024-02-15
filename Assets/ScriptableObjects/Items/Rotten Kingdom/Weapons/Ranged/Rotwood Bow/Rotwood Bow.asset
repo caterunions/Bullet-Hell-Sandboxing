@@ -20,7 +20,7 @@ MonoBehaviour:
   _rarity: 0
   _statBoosts: []
   _itemEffects: []
-  _ammo: 8
+  _ammo: 12
   _ammoImage: {fileID: -750732335, guid: c004ec9555ec50a4b909d05e0542cfda, type: 3}
   _reloadTime: 1
   _attacks:
@@ -36,7 +36,7 @@ MonoBehaviour:
     _endDelay: 0.3
     _startAtFixedAngle: 0
     _fixedAngle: 0
-    _randomAngleOffset: 5
+    _randomAngleOffset: 3
   - _bullet: {fileID: 2161539598315925361, guid: 46ab2727d661eec42bebf53f3d1d6f29, type: 3}
     _count: 3
     _countModifier: 0
@@ -49,4 +49,4 @@ MonoBehaviour:
     _endDelay: 0.3
     _startAtFixedAngle: 0
     _fixedAngle: 0
-    _randomAngleOffset: 5
+    _randomAngleOffset: 3

@@ -125,7 +125,7 @@ public class EquipmentManager : MonoBehaviour
                 itemEffectsInChain = bullet.PreviousEffectsInChain;
             }
 
-            if (UnityEngine.Random.Range(0, 100) <= itemEffect.Chance)
+            if (UnityEngine.Random.Range(0, 100) <= chance)
             {
                 itemEffect.Proc(_player, activator, bullet, target, dmgEvent, _playerInventory, _playerStats, _bulletLauncher, itemEffectsInChain);
             }

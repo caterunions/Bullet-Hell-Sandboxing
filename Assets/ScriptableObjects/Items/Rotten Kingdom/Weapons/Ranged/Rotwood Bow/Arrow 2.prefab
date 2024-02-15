@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5454127979565469931}
   - component: {fileID: 2161539598315925361}
   - component: {fileID: 6793478885196329168}
-  - component: {fileID: 1606544328974051595}
+  - component: {fileID: -8777439227135411622}
   m_Layer: 0
   m_Name: Arrow 2
   m_TagString: Untagged
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _behaviours:
   - {fileID: 6793478885196329168}
-  - {fileID: 1606544328974051595}
+  - {fileID: -8777439227135411622}
   _solidObjectPierceCount: 0
   _baseDamage: 10
   _armorPiercing: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _velocity: 14
---- !u!114 &1606544328974051595
+--- !u!114 &-8777439227135411622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,11 +127,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3905214393686928367}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 033e103828c1f7f4bb596176f07e6e6d, type: 3}
+  m_Script: {fileID: 11500000, guid: f3ab78022afa8a449bb774c9d7112167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _frequency: -15
-  _magnitude: 0.5
+  _minFrequency: 1
+  _maxFrequency: 10
+  _minMagnitude: -0.5
+  _maxMagnitude: 0.5
 --- !u!1 &6946230142996865593
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d2f62fe200ab54196df3f3b56439ea, type: 3}
+  m_Name: Antares
+  m_EditorClassIdentifier: 
+  _internalID: antares
+  _displayName: Antares
+  _description: 
+  _sprite: {fileID: 2127861212, guid: c004ec9555ec50a4b909d05e0542cfda, type: 3}
+  _starReq: 4
+  _rarity: 4
+  _statBoosts: []
+  _itemEffects: []
+  _ammo: 0
+  _ammoImage: {fileID: 0}
+  _reloadTime: 0
+  _attacks: []

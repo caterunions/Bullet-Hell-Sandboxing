@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SinWaveMovement : BulletBehaviour
+public class RandomizedSinWaveMovement : BulletBehaviour
 {
     [SerializeField]
+    private float _minFrequency;
+    [SerializeField]
+    private float _maxFrequency;
+
     private float _frequency;
 
     [SerializeField]
+    private float _minMagnitude;
+    [SerializeField]
+    private float _maxMagnitude;
+
     private float _magnitude;
 
     private float _timeAlive;
@@ -18,6 +26,9 @@ public class SinWaveMovement : BulletBehaviour
 
     private void OnEnable()
     {
+        _magnitude = Random.Range(_minMagnitude, _maxMagnitude);
+        _frequency = Random.Range(_minFrequency, _maxFrequency);
+
         _offset = transform.eulerAngles.z;
 
         _dir = transform.right;
