@@ -39,6 +39,9 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private Collider2D _collider;
 
+    [SerializeField]
+    private bool _destroyOnWalls = true;
+
     public float DistanceTravelled
     {
         get
@@ -82,7 +85,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("wall"))
+        if (collision.CompareTag("wall") && _destroyOnWalls)
         {
             Destroy(gameObject);
         }
@@ -128,7 +131,7 @@ public class Bullet : MonoBehaviour
 
     protected virtual void Awake()
     {
-        _collider.enabled = false;
+        if(_collider != null) _collider.enabled = false;
         Behaviours.ForEach(b => b.enabled = false);
         _origin = transform.position;
     }
@@ -148,7 +151,7 @@ public class Bullet : MonoBehaviour
         _previousEffectsInChain = previousEffectsInChain;
         _launcher = launcher;
 
-        _collider.enabled = true;
+        if(_collider != null) _collider.enabled = true;
         Behaviours.ForEach(b => b.enabled = true);
     }
 

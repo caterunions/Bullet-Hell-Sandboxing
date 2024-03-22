@@ -12,12 +12,10 @@ public class ConstantForwardVelocity : BulletBehaviour
     private void OnEnable()
     {
         _velocity *= bullet.VelocityMultiplier;
-
-        _dir = transform.up;
     }
 
     private void Update()
     {
-        rb.velocity = _dir * _velocity;
+        rb.velocity = transform.up * _velocity;
     }
 }

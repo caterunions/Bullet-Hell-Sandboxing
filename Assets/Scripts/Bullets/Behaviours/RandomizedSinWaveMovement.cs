@@ -19,29 +19,16 @@ public class RandomizedSinWaveMovement : BulletBehaviour
     private float _magnitude;
 
     private float _timeAlive;
-    private float _rotMult;
-    private float _offset;
-
-    private Vector2 _dir;
 
     private void OnEnable()
     {
         _magnitude = Random.Range(_minMagnitude, _maxMagnitude);
         _frequency = Random.Range(_minFrequency, _maxFrequency);
-
-        _offset = transform.eulerAngles.z;
-
-        _dir = transform.right;
-
-        if (_magnitude >= 0f) _rotMult = Mathf.Clamp((_magnitude / 2) * 45f, 0f, 45f);
-        else _rotMult = -Mathf.Clamp((_magnitude / 2) * 45f, 0f, 45f);
     }
 
     private void Update()
     {
         _timeAlive += Time.deltaTime;
-
-        transform.localRotation = Quaternion.Euler(new Vector3(0, 0, _offset + (-Mathf.Cos(_timeAlive * _frequency) * _rotMult)));
-        transform.position = new Vector2(transform.position.x, transform.position.y) + _dir * Mathf.Cos(_timeAlive * _frequency) * (_magnitude * 0.01f);
+        transform.position = new Vector2(transform.position.x, transform.position.y) + new Vector2(transform.right.x, transform.right.y) * Mathf.Cos(_timeAlive * _frequency) * (_magnitude * 0.01f);
     }
 }
