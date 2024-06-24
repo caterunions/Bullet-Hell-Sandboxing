@@ -8,15 +8,18 @@ public class InventoryDisplay : MonoBehaviour
     private RectTransform _inventory;
     [SerializeField]
     private float _inventorySlideTime;
+    [SerializeField]
+    private float _inventoryWidth;
 
     private Coroutine _inventorySlideRoutine;
 
-    private float _goal = 250;
+    private float _goal;
 
     private bool _inventoryDisplayed = false;
 
     private void OnEnable()
     {
+        _goal = _inventoryWidth / 2;
         _inventory.anchoredPosition = new Vector2(_goal, _inventory.localPosition.y);
     }
 
@@ -31,22 +34,22 @@ public class InventoryDisplay : MonoBehaviour
         _inventoryDisplayed = show;
         if(show)
         {
-            _goal = -250;
+            _goal = -(_inventoryWidth / 2);
 
             while(_inventory.anchoredPosition.x > _goal)
             {
-                _inventory.anchoredPosition = new Vector2(_inventory.anchoredPosition.x - (500 * (Time.deltaTime / _inventorySlideTime)), _inventory.anchoredPosition.y);
+                _inventory.anchoredPosition = new Vector2(_inventory.anchoredPosition.x - (_inventoryWidth * (Time.deltaTime / _inventorySlideTime)), _inventory.anchoredPosition.y);
                 yield return null;
             }
             _inventory.anchoredPosition = new Vector2(_goal, _inventory.anchoredPosition.y);
         }
         else
         {
-            _goal = 250;
+            _goal = _inventoryWidth / 2;
 
             while (_inventory.anchoredPosition.x < _goal)
             {
-                _inventory.anchoredPosition = new Vector2(_inventory.anchoredPosition.x + (500 * (Time.deltaTime / _inventorySlideTime)), _inventory.anchoredPosition.y);
+                _inventory.anchoredPosition = new Vector2(_inventory.anchoredPosition.x + (_inventoryWidth * (Time.deltaTime / _inventorySlideTime)), _inventory.anchoredPosition.y);
                 yield return null;
             }
             _inventory.anchoredPosition = new Vector2(_goal, _inventory.localPosition.y);
