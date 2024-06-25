@@ -15,13 +15,13 @@ MonoBehaviour:
   _internalID: rotwood_bow
   _displayName: Rotwood Bow
   _description: 
-  _sprite: {fileID: -1446045505, guid: c004ec9555ec50a4b909d05e0542cfda, type: 3}
+  _sprite: {fileID: -324050679, guid: 2577e7e6f83f4834488f5b733f11e60b, type: 3}
   _starReq: 1
   _rarity: 0
   _statBoosts: []
   _itemEffects: []
   _ammo: 12
-  _ammoImage: {fileID: -750732335, guid: c004ec9555ec50a4b909d05e0542cfda, type: 3}
+  _ammoImage: {fileID: 2139108303, guid: 2577e7e6f83f4834488f5b733f11e60b, type: 3}
   _reloadTime: 1
   _attacks:
   - _bullet: {fileID: 4577983254873025437, guid: b96b7a34ee35063418fd12f255212b6a, type: 3}

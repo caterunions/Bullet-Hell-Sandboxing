@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c004ec9555ec50a4b909d05e0542cfda
+guid: 2577e7e6f83f4834488f5b733f11e60b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rotten Kingdom Items_0
+      name: Fantasy Area Items_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ef6d913e90b8b4fab5d05240f77eff
-      internalID: 908456575
+      spriteID: 05da5a6cd9027dd4298ccd31d5a9b7f6
+      internalID: 515893282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rotten Kingdom Items_1
+      name: Fantasy Area Items_1
       rect:
         serializedVersion: 2
         x: 16
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8e9fd7e6fef697499ea54a8c9e9a7ee
-      internalID: 1964607376
+      spriteID: ae4bd3f9ad499404988765efe8ce9480
+      internalID: -978788077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rotten Kingdom Items_2
+      name: Fantasy Area Items_2
       rect:
         serializedVersion: 2
         x: 32
@@ -160,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff16e54a09ce8841b992f2d98950f23
-      internalID: -1446045505
+      spriteID: 23e6dea01af854547831a6f3106e0a7b
+      internalID: -324050679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rotten Kingdom Items_3
+      name: Fantasy Area Items_3
       rect:
         serializedVersion: 2
         x: 48
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 991474b726938454db4a5d53fd573685
-      internalID: -750732335
+      spriteID: 203d05a217419ad43a93b8b631c7b1a2
+      internalID: 2139108303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rotten Kingdom Items_4
+      name: Fantasy Area Items_4
       rect:
         serializedVersion: 2
         x: 64
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff7253ac4494ab949a8e371fa46f0a42
-      internalID: 1124284464
+      spriteID: 339a2abf8ba619c4cbcee9b681a9b3c8
+      internalID: -323849013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rotten Kingdom Items_5
+      name: Fantasy Area Items_5
       rect:
         serializedVersion: 2
         x: 80
@@ -223,14 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59a792ec16dbe6b4fa0a05c423fb83ab
-      internalID: 555311649
+      spriteID: 382903714f096a74aaab133153dd97df
+      internalID: -332169140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rotten Kingdom Items_6
+      name: Fantasy Area Items_6
       rect:
         serializedVersion: 2
         x: 96
@@ -244,8 +244,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47395c4cc7e70e845b75208a5f93cb3c
-      internalID: 2127861212
+      spriteID: bbccf0385d1d1394aab715172929c267
+      internalID: 1518482042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Items_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9422b027a7a08ae47b8d24185fae2e4c
+      internalID: 1261218129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Items_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd2f65a52008de41bc1411380e7bc55
+      internalID: 1123477015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Items_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d204b154e00ede47a82184483b42ad4
+      internalID: -260654625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Items_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4689fbc04ae73a94e9e075f44b2494f5
+      internalID: 549869346
       vertices: []
       indices: 
       edges: []
@@ -261,13 +345,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rotten Kingdom Items_6: 2127861212
-      Rotten Kingdom Items_5: 555311649
-      Rotten Kingdom Items_2: -1446045505
-      Rotten Kingdom Items_1: 1964607376
-      Rotten Kingdom Items_4: 1124284464
-      Rotten Kingdom Items_3: -750732335
-      Rotten Kingdom Items_0: 908456575
+      Fantasy Area Items_6: 1518482042
+      Fantasy Area Items_2: -324050679
+      Fantasy Area Items_0: 515893282
+      Fantasy Area Items_10: 549869346
+      Fantasy Area Items_9: -260654625
+      Fantasy Area Items_3: 2139108303
+      Fantasy Area Items_7: 1261218129
+      Fantasy Area Items_1: -978788077
+      Fantasy Area Items_5: -332169140
+      Fantasy Area Items_8: 1123477015
+      Fantasy Area Items_4: -323849013
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

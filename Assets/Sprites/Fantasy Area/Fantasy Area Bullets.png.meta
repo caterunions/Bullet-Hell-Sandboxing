@@ -280,7 +280,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,7 +301,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -309,6 +309,111 @@ TextureImporter:
       bones: []
       spriteID: d502ac95f9e7f7b4c9b7483ef5629c43
       internalID: -1262504683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Bullets_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 123
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed2f6e2f98943c4688ec895b9180d29
+      internalID: 822553326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Bullets_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 122
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b052426c7e7c94c8b73ea8da56ac77
+      internalID: 1452963221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Bullets_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641763f24900e9343b62d37db4971630
+      internalID: 1592410790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Bullets_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 123
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5a4714109c08241acecbeb5283f8b6
+      internalID: 1789937872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Bullets_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d24188e19001494c89f76ccc48a34ef
+      internalID: -2030392203
       vertices: []
       indices: 
       edges: []
@@ -327,13 +432,18 @@ TextureImporter:
       Rotten Kingdom Bullets_5: -482114861
       Rotten Kingdom Bullets_7: 1506260302
       Rotten Kingdom Bullets_8: -676737666
+      Fantasy Area Bullets_0: 822553326
       Rotten Kingdom Bullets_9: -1262504683
       Rotten Kingdom Bullets_4: -2011174927
       Rotten Kingdom Bullets_6: 1402956097
+      Fantasy Area Bullets_2: 1592410790
+      Fantasy Area Bullets_3: 1789937872
       Rotten Kingdom Bullets_3: 987978648
       Rotten Kingdom Bullets_0: -151056903
       Rotten Kingdom Bullets_2: 472299272
       Rotten Kingdom Bullets_1: -1965018687
+      Fantasy Area Bullets_4: -2030392203
+      Fantasy Area Bullets_1: 1452963221
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

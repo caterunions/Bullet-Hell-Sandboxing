@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Player Inventory
   m_EditorClassIdentifier: 
   _miscInventory:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 1c2a4700a5675504cb265f9130ad1778, type: 2}
+  - {fileID: 11400000, guid: 391e03de0d3d4054fa624442fbe3a6eb, type: 2}
   - {fileID: 11400000, guid: 134de34cca736284f8f8a7ce0bc49200, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _weapon: {fileID: 11400000, guid: 6c8a6ac5981a2a746997c23392c0f14d, type: 2}
+  _weapon: {fileID: 11400000, guid: 623861a3e00129342bfc727b9f0a5194, type: 2}
   _ability: {fileID: 0}
   _accessories:
   - {fileID: 0}

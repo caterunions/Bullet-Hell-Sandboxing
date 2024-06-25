@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d2f62fe200ab54196df3f3b56439ea, type: 3}
+  m_Name: Apprentice's Shortbow
+  m_EditorClassIdentifier: 
+  _internalID: apprentice_shortbow
+  _displayName: Apprentice's Shortbow
+  _description: '<color=#ffffff><b>Training Gear</b>
+
+
+    <size=200%><color=#45a136><b>20
+    </b><color=#ffffff><size=150%>Damage
+
+    <size=200%><color=#47865b><b>24 </b><color=#ffffff><size=150%>Ammo
+
+    <size=200%><color=#47865b><b>1.5
+    </b><color=#ffffff><size=150%>Reload Time<size=100%>
+
+    <color=#ffeb57><b>12
+    </b><color=#ffffff>Range
+
+
+
+    <color=#bbbbbb><i>"description"</i>'
+  _sprite: {fileID: -260654625, guid: 2577e7e6f83f4834488f5b733f11e60b, type: 3}
+  _starReq: 0
+  _rarity: 0
+  _statBoosts: []
+  _itemEffects: []
+  _ammo: 24
+  _ammoImage: {fileID: 549869346, guid: 2577e7e6f83f4834488f5b733f11e60b, type: 3}
+  _reloadTime: 1.5
+  _attacks:
+  - _bullet: {fileID: 6487925087792620286, guid: 659374ff5a1db874db3f417e8edf3e9d, type: 3}
+    _count: 2
+    _countModifier: 0
+    _spread: 18
+    _spreadModifier: 0
+    _angleOffsetStart: 0
+    _angleOffsetIncrease: 0
+    _repetitions: 1
+    _repeatDelay: 0
+    _endDelay: 0.25
+    _startAtFixedAngle: 0
+    _fixedAngle: 0
+    _randomAngleOffset: 0
