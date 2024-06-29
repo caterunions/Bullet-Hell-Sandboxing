@@ -334,6 +334,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Items_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ab160b5cf9859469d590e88ce8e32b
+      internalID: 2119087449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -351,6 +372,7 @@ TextureImporter:
       Fantasy Area Items_10: 549869346
       Fantasy Area Items_9: -260654625
       Fantasy Area Items_3: 2139108303
+      Fantasy Area Items_11: 2119087449
       Fantasy Area Items_7: 1261218129
       Fantasy Area Items_1: -978788077
       Fantasy Area Items_5: -332169140

@@ -406,7 +406,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -414,6 +414,48 @@ TextureImporter:
       bones: []
       spriteID: 4d24188e19001494c89f76ccc48a34ef
       internalID: -2030392203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Bullets_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baa02e6e42067b40991b50778d97da7
+      internalID: -98704998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy Area Bullets_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 123
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7470ccfee97f2cd4a8406a1245a5a668
+      internalID: 1458483355
       vertices: []
       indices: 
       edges: []
@@ -436,9 +478,11 @@ TextureImporter:
       Rotten Kingdom Bullets_9: -1262504683
       Rotten Kingdom Bullets_4: -2011174927
       Rotten Kingdom Bullets_6: 1402956097
+      Fantasy Area Bullets_6: 1458483355
       Fantasy Area Bullets_2: 1592410790
       Fantasy Area Bullets_3: 1789937872
       Rotten Kingdom Bullets_3: 987978648
+      Fantasy Area Bullets_5: -98704998
       Rotten Kingdom Bullets_0: -151056903
       Rotten Kingdom Bullets_2: 472299272
       Rotten Kingdom Bullets_1: -1965018687
